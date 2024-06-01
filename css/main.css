@@ -200,7 +200,6 @@
 .davservicecard:hover {
     background-color: #e3e3e3;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
-    z-index: 999999;
 }
 
 .davservicecard:hover .davservicecardicon {
