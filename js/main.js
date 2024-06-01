@@ -16,6 +16,12 @@ $(document).ready(function () {
     const davnavbaritem = $(".davnavbaritem");
     const davnavbarlinks = $(".davnavbarlink");
     const davnavbarsocialicon = $(".davnavbarsocialicon");
+    const yeardate = $("#yearDate");
+
+    if(yeardate.length){
+        yeardate.text(new Date().getFullYear());
+    }
+
 
     if (hamburgerBtn.length) {
         hamburgerBtn.on("click", function () {

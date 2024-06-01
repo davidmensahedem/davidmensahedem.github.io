@@ -66,6 +66,11 @@
         text-wrap: wrap;
         width: 300px;
     }
+
+    .davservicecarddetails p{
+        font-weight: 500;
+        color: black;
+    }
 }
 
 /* Bigger Mobile View */
@@ -91,6 +96,24 @@
         height: 100%;
         border-radius: 50%;
         object-fit: cover;
+    }
+
+    .davfootersocialicons {
+        margin: 50px 10px;
+        padding-inline: 50px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .davfootersocialicon {
+        color: yellow;
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+
+    .davservicecarddetails p{
+        font-weight: 500;
+        color: black;
     }
 
 }
@@ -146,6 +169,32 @@
         font-size: var(--davsectiontitle-h3-fontsize);
         font-weight: var(--davfontweight-500);
     }
+
+    .davfootersocialicons {
+        margin: 50px auto;
+        padding-inline: 100px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        justify-content: center;
+        gap: 2rem;
+        width: 200px;
+        align-self: center;
+    }
+
+    .davfootersocialicon {
+        color: yellow;
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+
+    .davservicecarddetails p{
+        font-weight: 500;
+        color: black;
+        letter-spacing: 1px;
+        line-height: 20px;
+        text-align: center;
+    }
+
 
 }
 
@@ -416,6 +465,22 @@
         width: 600px;
     }
 
+    .davfootersocialicons{
+        margin: 50px auto;
+        padding-inline: 100px;
+        padding-top:20px;
+        padding-bottom:20px;
+        justify-content: center;
+        gap: 2rem;
+        width: 200px;
+        align-self: center;
+    }
+    
+    .davfootersocialicon{
+        color: yellow;
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
 
 }
 
@@ -432,7 +497,7 @@
     }
 
     .davaboutdetails p {
-        line-height:30px;
+        line-height: 30px;
     }
 
 }

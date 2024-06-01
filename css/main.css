@@ -71,7 +71,7 @@
     }
 }
 
-.davnavbarhamburger{
+.davnavbarhamburger {
     border: 1px solid yellow;
     padding: 0px 5px;
     margin-top: 2px;
@@ -80,6 +80,9 @@
 
 #davnavbar {
     background-color: black;
+    z-index: 999999;
+    top: 0;
+    position: sticky;
 }
 
 #davnavbar .davnavbarlogo a {
@@ -156,6 +159,10 @@
     font-size: var(--davsectiontitle-h3-fontsize);
     font-weight: var(--davfontweight-500);
     /* color: rgb(233, 233, 5); */
+}
+
+.davservicecard {
+    position: relative;
 }
 
 .davaboutcontent {
@@ -266,8 +273,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 70px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     border: 1px solid yellow;
 }
@@ -295,4 +302,36 @@
 .davfootercarddetails h5 {
     color: yellow;
     font-size: 1rem;
+}
+
+.davfootersocialicons {
+    margin: 40px 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-inline: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: 1px solid yellow;
+    transition: transform .4s;
+}
+
+.davfootersocialicon {
+    color: yellow;
+    font-size: 1.5rem;
+    transition: transform .4s;
+}
+
+.davfootersocialicons:hover {
+    transform: scale(0.9);
+}
+
+.davfootersocialicon:hover {
+    transform: translateY(-5px);
+}
+
+.davfooterbottomcontainer {
+    margin-top:28px;
+    margin-bottom: -25px;
+    text-align: center;
 }
