@@ -71,6 +71,13 @@
     }
 }
 
+.davnavbarhamburger{
+    border: 1px solid yellow;
+    padding: 0px 5px;
+    margin-top: 2px;
+    border-radius: 5px;
+}
+
 #davnavbar {
     background-color: black;
 }

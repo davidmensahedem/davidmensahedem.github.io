@@ -66,7 +66,6 @@
         text-wrap: wrap;
         width: 300px;
     }
-
 }
 
 /* Bigger Mobile View */
@@ -137,6 +136,17 @@
         font-weight: var(--davfontweight-500);
     }
 
+    .davfootercardicon div {
+        padding: 20px;
+        width: 70px;
+        height: 70px;
+    }
+
+    .davfootercardicon div i {
+        font-size: var(--davsectiontitle-h3-fontsize);
+        font-weight: var(--davfontweight-500);
+    }
+
 }
 
 @media (max-width: 991.98px) {
@@ -155,6 +165,8 @@
         font-weight: 500;
         color: yellow;
     }
+
+
 
     .davnavbarhamburger:hover {
         color: yellowgreen;
