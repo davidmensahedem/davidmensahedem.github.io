@@ -103,7 +103,7 @@
 .davservicesection,
 .davaboutsection,
 .davfootersection,
-.davtechstacksection{
+.davtechstacksection {
     padding: 1.4rem;
 }
 
@@ -347,7 +347,7 @@
     text-decoration: none !important;
 }
 
-.davtechstackcontent{
+.davtechstackcontent {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -356,8 +356,8 @@
     margin-top: var(--davservicecontent-topmargin);
 }
 
-.davtechstackcard{
-    background-color:white;
+.davtechstackcard {
+    background-color: white;
     margin: 0.1rem;
     width: 100px;
     height: auto;
@@ -370,18 +370,18 @@
     transition: background-color .4s;
 }
 
-.davtechimgcontainer{
+.davtechimgcontainer {
     width: 50%;
     height: 50%;
 }
 
-.davtechimg{
+.davtechimg {
     width: 60px;
     height: 60px;
-    object-fit:contain;
+    object-fit: contain;
 }
 
-.davtechstackcarddetails{
+.davtechstackcarddetails {
     letter-spacing: 1px;
     text-align: center;
     font-size: 1rem;
