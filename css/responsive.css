@@ -1,13 +1,99 @@
 /* Mobile View */
-@media (max-width: 480px) {}
+@media (max-width: 480px) {
+
+    :root {
+        --davsectiontitle-h1-fontsize: 1.5rem;
+        --davsectiontitle-h3-fontsize: 1rem;
+        --davsectiontitle-gap: 0.7rem;
+        --davservicecontent-topmargin: 1.125rem;
+
+        --davfontweight-500: 500;
+    }
+
+    .davservicesection,
+    .davaboutcontent,
+    .davfootersection {
+        padding: 1rem;
+    }
+
+    .davservicecard {
+        margin-inline: 2px;
+        width: 500px;
+    }
+
+    .davservicecard:hover {
+        background-color: #e3e3e3;
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+        z-index: 999999;
+    }
+
+    .davservicecard:hover .davservicecardicon {
+        transform: scale(0.9);
+        box-shadow: 0px 0px 0px 10px rgba(247, 247, 6, 0.1);
+    }
+
+    .davservicecardicon {
+        padding: 10px;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        color: yellow;
+        transition: transform .4s;
+    }
+
+    .davservicecardicon i {
+        font-size: var(--davsectiontitle-h3-fontsize);
+        font-weight: var(--davfontweight-500);
+    }
+
+    .davservicecardtitle h5 {
+        font-size: 1rem;
+    }
+
+
+    .davservicecarddetails p {
+        font-size: 0.8rem;
+        text-wrap: wrap;
+        width: 300px;
+    }
+
+    .davaboutdetails p {
+        font-size: 0.8rem;
+        text-wrap: wrap;
+        width: 300px;
+    }
+
+}
 
 /* Bigger Mobile View */
 @media (min-width: 480px) and (max-width:768.98px) {
+
     #preloader .water-text-container .water-text {
         width: 600px;
         font-size: 60px;
         line-height: 80px;
     }
+
+    .davaboutimagecontainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 250px;
+        max-height: 250px;
+        margin-bottom: 30px;
+    }
+
+    .davaboutimagecontainer img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
 }
 
 /* Tablet View */
@@ -17,6 +103,40 @@
         font-size: 100px;
         line-height: 120px;
     }
+
+    .davservicecontent,
+    .davaboutcontent {
+        padding: 0;
+    }
+
+    .davservicecard {
+        width: 300px;
+    }
+
+    .davaboutdetails {
+        width: 550px;
+    }
+
+    .davaboutdetails p {
+        letter-spacing: 1px;
+    }
+
+    .davservicecarddetails P {
+        width: 250px;
+        letter-spacing: 1px;
+    }
+
+    .davservicecardicon {
+        padding: 20px;
+        width: 70px;
+        height: 70px;
+    }
+
+    .davservicecardicon i {
+        font-size: var(--davsectiontitle-h3-fontsize);
+        font-weight: var(--davfontweight-500);
+    }
+
 }
 
 @media (max-width: 991.98px) {
@@ -204,7 +324,7 @@
         cursor: pointer;
         text-decoration: none;
         position: relative;
-        letter-spacing:2px;
+        letter-spacing: 2px;
     }
 
     .davnavbarlink::after {
@@ -272,6 +392,19 @@
         transform: scale(1.2);
         transform: translateY(-5px);
     }
+
+    :root {
+        --davsectiontitle-h1-fontsize: 3rem;
+        --davsectiontitle-h3-fontsize: 1.8rem;
+        --davsectiontitle-gap: 2rem;
+        --davservicecontent-topmargin: 3.125rem;
+    }
+
+    .davaboutdetails {
+        width: 600px;
+    }
+
+
 }
 
 
@@ -281,6 +414,15 @@
         font-size: 100px;
         line-height: 140px;
     }
+
+    .davaboutdetails {
+        margin-left: 60px;
+    }
+
+    .davaboutdetails p {
+        line-height:30px;
+    }
+
 }
 
 /* Desktop view */
@@ -289,6 +431,32 @@
         width: 100%;
         font-size: 100px;
         line-height: 140px;
+    }
+
+}
+
+@media (min-width: 1199.98px) {
+
+    .davaboutimagecontainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 350px;
+        max-height: 350px;
+    }
+
+    .davaboutcontent {
+        margin-bottom: 30px;
+    }
+
+    .davaboutdetails {
+        width: 700px;
+        margin-left: 60px;
+    }
+
+    .davaboutdetails p {
+        letter-spacing: 2px;
+        line-height: 30px;
     }
 }
 
@@ -300,5 +468,19 @@
         letter-spacing: 6px;
         width: 1500px;
         overflow-y: hidden;
+    }
+
+    .davaboutcontent {
+        margin-bottom: 30px;
+    }
+
+    .davaboutdetails {
+        width: 900px;
+        margin-left: 50px;
+    }
+
+    .davaboutdetails p {
+        letter-spacing: 2px;
+        line-height: 35px;
     }
 }
