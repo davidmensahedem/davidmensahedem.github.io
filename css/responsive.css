@@ -122,7 +122,7 @@
     }
 
     .davtechstackcard {
-        max-width: 6rem;
+        max-width: 100px;
         padding: 1.25rem 0.625rem;
         row-gap: 10px;
     }
@@ -217,7 +217,7 @@
     }
 
     .davtechstackcard {
-        max-width: 7rem;
+        width: 110px;
         padding: 1.25rem 0.625rem;
         row-gap: 10px;
     }
@@ -514,7 +514,7 @@
 
 
     .davtechstackcard {
-        max-width: 8rem;
+        width: 120px;
         padding: 1.25rem 0.625rem;
         row-gap: 10px;
     }
@@ -578,7 +578,7 @@
     }
 
     .davtechstackcard {
-        max-width: 8rem;
+        width: 130rem;
         padding: 1.25rem 0.625rem;
         row-gap: 10px;
     }
