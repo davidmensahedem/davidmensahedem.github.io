@@ -359,7 +359,7 @@
 .davtechstackcard{
     background-color:white;
     margin: 0.1rem;
-    width: 80px;
+    width: 100px;
     height: auto;
     text-align: center;
     padding: 1.25rem 0.625rem;
@@ -376,9 +376,10 @@
 }
 
 .davtechimg{
-    width: 100%;
-    height: 100%;
+    width: 60px;
+    height: 60px;
     object-fit:contain;
+    background-color: yellow;
 }
 
 .davtechstackcarddetails{

@@ -578,7 +578,7 @@
     }
 
     .davtechstackcard {
-        width: 130rem;
+        width: 130px;
         padding: 1.25rem 0.625rem;
         row-gap: 10px;
     }
