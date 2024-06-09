@@ -388,3 +388,83 @@
     font-weight: var(--davfontweight-500);
     color: black;
 }
+
+.davblogsection{
+    padding-bottom: 60px;
+    background-color: white;
+    z-index: 99999;
+}
+
+.davblogcontent{
+    margin-top: var(--davservicecontent-topmargin);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    gap: 1rem;
+}
+
+.davblogcard {
+    background-color: white;
+
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-inline: 20px;
+    /* margin: 1rem; */
+    width: 100%;
+    height: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    align-items: center;
+    transition: background-color .4s;
+    /* border-radius: 15px; */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.davblogcardimgcontainer{
+    width: 100%;
+    height: 300px;
+}
+
+.davblogcardimgcontainer img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.davblogcarddetails{
+    padding:20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-inline:30px;
+    text-align: center;
+    text-wrap: wrap;
+    width: 100%;
+    margin-inline: auto;
+    color: black;
+    font-weight: 500;
+}
+
+.davblogcarddetails p{
+    text-align: justify;
+    margin-inline: auto;
+    letter-spacing: 0.5px;
+}
+
+.davbloglink{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.davbloglink span{
+    color: black;
+}
+
+.davbloglink a{
+    color: cyan;
+    text-decoration: none;
+}

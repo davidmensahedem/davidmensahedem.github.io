@@ -226,6 +226,13 @@
         font-size: 1rem;
     }
 
+    
+    .davblogcard {
+        width: 45%;
+        height: auto;
+        margin-inline: auto;
+    }
+
 }
 
 @media (max-width: 991.98px) {
@@ -522,6 +529,13 @@
     .davtechstackcarddetails small {
         font-size: 1rem;
     }
+    
+    .davblogcard {
+        max-width: 45%;
+        max-height: auto;
+        margin-inline: auto;
+    }
+
 
 }
 
