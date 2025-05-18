@@ -60,18 +60,26 @@ a {
     justify-content: center;
     align-items: center;
     z-index: 9999;
+    overflow: hidden;
 }
 
 .water-text-container {
     text-align: center;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 
 .water-text {
-    font-size: 3rem;
+    font-size: clamp(2rem, 5vw, 3rem);
     background: linear-gradient(45deg, var(--secondary-color), #4a8fff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: float 3s ease-in-out infinite;
+    white-space: normal;
+    word-wrap: break-word;
+    margin: 0 auto;
+    max-width: 100%;
 }
 
 .loader {
