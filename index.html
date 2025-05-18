@@ -3,15 +3,23 @@
 
 <head>
 	<meta charset="UTF-8">
-	<title>David Mensah - Portfolio</title>
-	<meta name="description" content="David Mensah Software Engineer (Portfolio Website)">
+	<title>David Mensah - Full Stack Software Engineer</title>
+	<meta name="description"
+		content="David Mensah - Senior Software Engineer specializing in full-stack development, web applications, and API design">
 	<meta name="keywords"
-		content="mensah, david, caleb, portfolio, software engineer, ghana, c# developer, backend, full-stack, frontend">
+		content="david mensah, software engineer, full-stack developer, web developer, API developer, ghana tech, c# developer, backend engineer, frontend developer">
 	<meta content="David Edem Mensah" name="author">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="theme-color" content="#0a192f">
 	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+		rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/responsive.css">
 </head>
@@ -23,13 +31,14 @@
 		<div id="preloader">
 			<div class="water-text-container">
 				<h1 class="water-text">david edem <br>mensah</h1>
+				<div class="loader"></div>
 			</div>
 		</div>
 
-		<nav id="davnavbar">
+		<nav id="davnavbar" class="navbar-glass">
 
 			<div class="davnavbarlogo">
-				<a href="index.html" class="">DM</a>
+				<a href="index.html" class="logo-text">DM</a>
 			</div>
 
 			<div class="davnavbarmenu" id="davnavbarmenu">
@@ -47,12 +56,18 @@
 				</div>
 
 				<div class="davnavbarsocialicons">
-					<a href="https://github.com/davidmensahedem" target="_blank" class="davnavbarsocialicon"><i
-							class="ri-github-fill"></i></a>
+					<a href="https://github.com/davidmensahedem" target="_blank" class="davnavbarsocialicon"
+						aria-label="GitHub">
+						<i class="ri-github-fill"></i>
+					</a>
 					<a href="https://www.linkedin.com/in/david-mensah-88b57417a/" target="_blank"
-						class="davnavbarsocialicon"><i class="ri-linkedin-fill"></i></a>
-					<a href="https://x.com/davidedemmensah" target="_blank" class="davnavbarsocialicon"><i
-							class="ri-twitter-fill"></i></a>
+						class="davnavbarsocialicon" aria-label="LinkedIn">
+						<i class="ri-linkedin-fill"></i>
+					</a>
+					<a href="https://x.com/davidedemmensah" target="_blank" class="davnavbarsocialicon"
+						aria-label="Twitter">
+						<i class="ri-twitter-fill"></i>
+					</a>
 				</div>
 
 			</div>
@@ -62,186 +77,175 @@
 			</div>
 		</nav>
 
-		<!-- About  -->
-		<div class="davaboutsection" id="about">
+		<!-- Hero Section -->
+		<section id="home" class="hero-section">
+			<div class="hero-content" data-aos="fade-up">
+				<span class="hero-greeting">Hi, my name is</span>
+				<h1 class="hero-title">David Edem Mensah</h1>
+				<h2 class="hero-subtitle">I build exceptional digital experiences.</h2>
+				<p class="hero-description">
+					I'm a software engineer specializing in building (and occasionally designing) exceptional digital
+					experiences.
+					Currently, I'm focused on building accessible, human-centered products.
+				</p>
+				<div class="hero-cta">
+					<a href="#portfolio" class="primary-btn">View My Work</a>
+					<a href="#contact" class="secondary-btn">Get In Touch</a>
+				</div>
+			</div>
+		</section>
 
-			<div class="davsectiontitle davsectiontopspace">
-				<h1>About Me</h1>
+		<!-- About Section -->
+		<section class="davaboutsection section-padding" id="about">
+			<div class="davsectiontitle" data-aos="fade-up">
+				<h2>About Me</h2>
 				<h3>The engineer from within</h3>
 			</div>
 
 			<div class="davaboutcontent">
-
-				<div class="davaboutimagecontainer">
-					<img src="./img/david.jpg" alt="David Edem Mensah">
+				<div class="davaboutimagecontainer" data-aos="fade-right">
+					<img src="./img/david.jpg" alt="David Edem Mensah" class="about-image">
+					<div class="image-overlay"></div>
 				</div>
 
-				<div class="davaboutdetails">
+				<div class="davaboutdetails" data-aos="fade-left">
 					<p>
-						I am a software engineer with over 5 years of experience in developing web applications, web map
-						applications, and a variety of APIs. I have a passion for building software solutions that solve
-						real-world problems. I adapt as needed and acquire the necessary skills to complete the task at
-						hand. I am a
-						'techkie' and always looking for ways to improve my skills and knowledge in the field of
-						software development. I am also a break dancer and calisthenics enthusiast. I love to dance and
-						keep fit. I love to break dance and train individuals and groups, and also keep fit with some
-						cool calisthenics.
-
+						With over 5 years of experience in software engineering, I've had the privilege of working on
+						diverse projects
+						that have shaped my expertise in web applications, API development, and geospatial solutions. My
+						approach
+						combines technical excellence with a deep understanding of user needs.
 					</p>
+					<p>
+						Beyond coding, I'm passionate about sharing knowledge and maintaining a healthy work-life
+						balance. As a break
+						dancer and calisthenics enthusiast, I bring the same discipline and creativity from these
+						pursuits into my
+						software development practice.
+					</p>
+					<div class="about-highlights">
+						<div class="highlight-item">
+							<span class="highlight-number">5+</span>
+							<span class="highlight-text">Years Experience</span>
+						</div>
+						<div class="highlight-item">
+							<span class="highlight-number">50+</span>
+							<span class="highlight-text">Projects Completed</span>
+						</div>
+						<div class="highlight-item">
+							<span class="highlight-number">20+</span>
+							<span class="highlight-text">Happy Clients</span>
+						</div>
+					</div>
 				</div>
 			</div>
+		</section>
 
-
-
-		</div>
-		<!-- End of About -->
-
-
-		<!-- Services -->
-		<div class="davservicesection davsectiontopspace" id="services">
-
-			<div class="davsectiontitle">
-				<h1>Services</h1>
-				<h3>Offering you the best services</h3>
+		<!-- Services Section -->
+		<section class="davservicesection section-padding" id="services">
+			<div class="davsectiontitle" data-aos="fade-up">
+				<h2>Services</h2>
+				<h3>Crafting Digital Excellence</h3>
 			</div>
 
 			<div class="davservicecontent">
-
-				<div class="davservicecard">
-
+				<div class="davservicecard" data-aos="fade-up">
 					<div class="davservicecardicon">
-						<i class="ri-dashboard-fill"></i>
+						<i class="ri-code-s-slash-line"></i>
 					</div>
-
 					<div class="davservicecardtitle">
-						<h5>Website Creation</h5>
+						<h5>Web Development</h5>
 					</div>
-
 					<div class="davservicecarddetails">
 						<p>
-							I build stunningly attractive and responsive websites that are user-friendly and easy to
-							use,
-							for organizations, technology start-ups, professionals, small or large businesses across a
-							wide of industries.
-
+							Creating responsive, user-friendly websites with modern frameworks and best practices.
+							Specializing in React, Angular, and Vue.js for dynamic front-end experiences.
 						</p>
 					</div>
-
 				</div>
 
-				<div class="davservicecard">
-
+				<div class="davservicecard" data-aos="fade-up" data-aos-delay="100">
 					<div class="davservicecardicon">
-						<i class="ri-book-fill"></i>
+						<i class="ri-server-line"></i>
 					</div>
-
 					<div class="davservicecardtitle">
-						<h5>API Creation</h5>
+						<h5>API Development</h5>
 					</div>
-
 					<div class="davservicecarddetails">
 						<p>
-							With over 3 years of experience in API development, I can help you build robust and scalable
-							APIs
-							to suit your business needs. I have experience in developing RESTful APIs using Node.js,
-							.Net Core API, and Python.
+							Building robust, scalable APIs using .NET Core, Node.js, and Python.
+							Implementing secure authentication, caching, and performance optimization.
 						</p>
 					</div>
-
 				</div>
 
-				<div class="davservicecard">
-
+				<div class="davservicecard" data-aos="fade-up" data-aos-delay="200">
 					<div class="davservicecardicon">
-						<i class="ri-dashboard-fill"></i>
+						<i class="ri-map-2-line"></i>
 					</div>
-
 					<div class="davservicecardtitle">
-						<h5>Web Map Applications</h5>
+						<h5>GIS Solutions</h5>
 					</div>
-
 					<div class="davservicecarddetails">
 						<p>
-							Making interactive web maps is my passion. I have experience in developing web map
-							applications that provide you with a wide range of geospatial functionalities to aid you in
-							making informed decisions.
+							Developing interactive mapping applications using Leaflet and other GIS technologies.
+							Creating custom solutions for location-based services and spatial analysis.
 						</p>
 					</div>
-
 				</div>
 
-				<div class="davservicecard">
-
+				<div class="davservicecard" data-aos="fade-up" data-aos-delay="300">
 					<div class="davservicecardicon">
-						<i class="ri-dashboard-fill"></i>
+						<i class="ri-database-2-line"></i>
 					</div>
-
 					<div class="davservicecardtitle">
-						<h5>Software Training</h5>
+						<h5>Database Design</h5>
 					</div>
-
 					<div class="davservicecarddetails">
 						<p>
-							As a seasoned software developer, I offer training in various programming languages and
-							technologies. I have experience in training individuals and groups in programming languages
-							such as C#, Python, and NodeJs.
-
+							Architecting efficient database solutions using SQL and NoSQL technologies.
+							Optimizing queries and implementing data security best practices.
 						</p>
 					</div>
-
 				</div>
 
-				<div class="davservicecard">
-
+				<div class="davservicecard" data-aos="fade-up" data-aos-delay="400">
 					<div class="davservicecardicon">
-						<i class="ri-dashboard-fill"></i>
+						<i class="ri-cloud-line"></i>
 					</div>
-
 					<div class="davservicecardtitle">
-						<h5>Break Dance Training</h5>
+						<h5>Cloud Solutions</h5>
 					</div>
-
 					<div class="davservicecarddetails">
 						<p>
-							Hit the dance floor with some cool break dance moves. I offer training in break dance moves
-							that will make you the life of the party. I have experience in training individuals and
-							groups in break dance moves.
-
+							Implementing cloud-native applications using AWS, Azure, and GCP.
+							Setting up CI/CD pipelines and managing containerized applications.
 						</p>
 					</div>
-
 				</div>
 
-				<div class="davservicecard">
-
+				<div class="davservicecard" data-aos="fade-up" data-aos-delay="500">
 					<div class="davservicecardicon">
-						<i class="ri-dashboard-fill"></i>
+						<i class="ri-team-line"></i>
 					</div>
-
 					<div class="davservicecardtitle">
-						<h5>Calithesnics Training</h5>
+						<h5>Technical Training</h5>
 					</div>
-
 					<div class="davservicecarddetails">
 						<p>
-							Stay fit and healthy with some cool calisthenics moves. I offer training in calisthenics
-							moves that will keep you in shape. I have experience in training individuals and groups in
-							a simple and enticing way.
+							Providing comprehensive training in modern web technologies and programming languages.
+							Mentoring developers and teams in best practices and patterns.
 						</p>
 					</div>
-
 				</div>
-
 			</div>
-		</div>
-		<!-- End of Services -->
+		</section>
 
-		<!-- Tech stack and tools -->
-		<div class="davtechstacksection">
-
-			<div class="davsectiontitle">
-				<h1>My Tech Stacks</h1>
-				<h3>Technologies I use to build awesome software solutions</h3>
+		<!-- Tech Stack Section -->
+		<section class="davtechstacksection section-padding">
+			<div class="davsectiontitle" data-aos="fade-up">
+				<h2>Tech Stack</h2>
+				<h3>Tools & Technologies I Work With</h3>
 			</div>
 
 			<div class="davtechstackcontent">
@@ -580,12 +584,301 @@
 
 			</div>
 			<!-- End of Tech stack and tools -->
-		</div>
+		</section>
 
-		<div class="davblogsection davsectiontopspace">
-			<div class="davsectiontitle">
-				<h1>My Blog</h1>
-				<h3>Read my blog posts and give me a like or follow if you love my content.</h3>
+		<!-- Portfolio Section -->
+		<section class="davportfoliosection section-padding" id="portfolio">
+			<div class="davsectiontitle" data-aos="fade-up">
+				<h2>Portfolio</h2>
+				<h3>Featured Projects & Case Studies</h3>
+			</div>
+
+			<div class="davportfoliocontent">
+				<!-- Project 1 -->
+				<!-- <div class="davportfoliocard" data-aos="fade-up">
+					<div class="davportfoliocard-inner">
+						<div class="davportfoliocard-front">
+							<div class="davportfoliocard-image">
+								<img src="img/geospatial.jpg" alt="GeoSpatial Analytics Platform">
+							</div>
+							<div class="davportfoliocard-overlay">
+								<h4>GeoSpatial Analytics Platform</h4>
+								<p>A comprehensive geospatial data analysis and visualization platform</p>
+							</div>
+						</div>
+						<div class="davportfoliocard-back">
+							<h4>GeoSpatial Analytics Platform</h4>
+							<div class="davportfoliocard-tech">
+								<span>Python</span>
+								<span>FastAPI</span>
+								<span>PostgreSQL</span>
+								<span>Leaflet</span>
+								<span>React</span>
+							</div>
+							<p>Advanced geospatial platform enabling real-time data analysis, custom mapping solutions,
+								and interactive visualizations for urban planning and environmental monitoring.</p>
+							<div class="davportfoliocard-links">
+								<a href="#" class="portfolio-link"><i class="ri-github-fill"></i> View Code</a>
+								<a href="#" class="portfolio-link"><i class="ri-external-link-line"></i> Live Demo</a>
+							</div>
+						</div>
+					</div>
+				</div> -->
+
+				<!-- Project 2 -->
+				<!-- <div class="davportfoliocard" data-aos="fade-up">
+					<div class="davportfoliocard-inner">
+						<div class="davportfoliocard-front">
+							<div class="davportfoliocard-image">
+								<img src="img/microservices.jpg" alt="Microservices Architecture">
+							</div>
+							<div class="davportfoliocard-overlay">
+								<h4>Enterprise Microservices Platform</h4>
+								<p>Scalable microservices architecture for enterprise applications</p>
+							</div>
+						</div>
+						<div class="davportfoliocard-back">
+							<h4>Enterprise Microservices Platform</h4>
+							<div class="davportfoliocard-tech">
+								<span>.NET Core</span>
+								<span>Docker</span>
+								<span>Kubernetes</span>
+								<span>RabbitMQ</span>
+								<span>Redis</span>
+							</div>
+							<p>High-performance microservices platform handling millions of transactions, featuring
+								service discovery, load balancing, and real-time monitoring capabilities.</p>
+							<div class="davportfoliocard-links">
+								<a href="#" class="portfolio-link"><i class="ri-github-fill"></i> View Code</a>
+								<a href="#" class="portfolio-link"><i class="ri-external-link-line"></i>
+									Documentation</a>
+							</div>
+						</div>
+					</div>
+				</div> -->
+
+				<!-- Project 3 -->
+				<div class="davportfoliocard" data-aos="fade-up">
+					<div class="davportfoliocard-inner">
+						<div class="davportfoliocard-front">
+							<div class="davportfoliocard-image">
+								<img src="img/easycharge.png" alt="Easy Charge">
+							</div>
+							<div class="davportfoliocard-overlay">
+								<h4>Easy Charge</h4>
+								<p>A geo-location based electric vehicle charging station search platform</p>
+							</div>
+						</div>
+						<div class="davportfoliocard-back">
+							<h4>Easy Charge</h4>
+							<div class="davportfoliocard-tech">
+								<span>Python</span>
+								<span>Flask API</span>
+								<span>MySQL</span>
+								<span>Leaflet.js</span>
+								<span>HTML/CSS</span>
+								<span>REST API</span>
+								<span>Toronto API</span>
+							</div>
+							<p>
+								A geo-location based electric vehicle charging station search platform.
+							</p>
+							<div class="davportfoliocard-links">
+								<a href="https://github.com/davidmensahedem/easycharge" class="portfolio-link"><i
+										class="ri-github-fill"></i> View Code</a>
+								<a href="https://www.linkedin.com/posts/activity-7282429605167198208-FR1M?utm_source=share&utm_medium=member_desktop&rcm=ACoAACpxMusBwtwKD0livrf3MAgQJUaq1cfS9kc"
+									class="portfolio-link"><i class="ri-external-link-line"></i> Live Demo</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="davportfoliocard" data-aos="fade-up" data-aos-delay="100">
+					<div class="davportfoliocard-inner">
+						<div class="davportfoliocard-front">
+							<div class="davportfoliocard-image">
+								<img src="img/expiryapp.png" alt="Expiry Tracker">
+							</div>
+							<div class="davportfoliocard-overlay">
+								<h4>Expiry Tracker</h4>
+								<p>
+									A simple web application that allows users to track the expiry date of their
+									products.
+								</p>
+							</div>
+						</div>
+						<div class="davportfoliocard-back">
+							<h4>Expiry Tracker</h4>
+							<div class="davportfoliocard-tech">
+								<span>Express.js</span>
+								<span>React.js</span>
+								<span>MySQL</span>
+								<span>Cron Job</span>
+								<span>Arkesel SMS</span>
+								<span>REST API</span>
+								<span>HTML/CSS</span>
+							</div>
+							<p>
+								A web application that helps users track product expiry dates with automated SMS
+								notifications through Arkesel API.
+							</p>
+							<div class="davportfoliocard-links">
+								<a href="https://github.com/davidmensahedem/trackexpiryapp"><i
+										class="ri-github-fill"></i> View Code</a>
+								<a href="https://www.linkedin.com/posts/activity-7281038990844047361-vXRK?utm_source=share&utm_medium=member_desktop&rcm=ACoAACpxMusBwtwKD0livrf3MAgQJUaq1cfS9kc"
+									class="portfolio-link"><i class="ri-external-link-line"></i> Live Demo</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="davportfoliocard" data-aos="fade-up" data-aos-delay="100">
+					<div class="davportfoliocard-inner">
+						<div class="davportfoliocard-front">
+							<div class="davportfoliocard-image">
+								<img src="img/netcoreapi.png" alt=".Net Core Url Shortner Rest API">
+							</div>
+							<div class="davportfoliocard-overlay">
+								<h4>
+									.Net Core Url Shortner Rest API
+								</h4>
+								<p>
+									A RESTful API for URL shortening built with .NET Core and Entity Framework Core.
+								</p>
+							</div>
+						</div>
+						<div class="davportfoliocard-back">
+							<h4>
+								.Net Core Url Shortner Rest API
+							</h4>
+							<div class="davportfoliocard-tech">
+								<span>.NET Core</span>
+								<span>PostgreSQL</span>
+								<span>C#</span>
+								<span>REST API</span>
+							</div>
+							<p>A high-performance URL shortening API built with .NET Core and PostgreSQL, featuring
+								clean architecture and RESTful endpoints.</p>
+							<div class="davportfoliocard-links">
+								<a href="https://github.com/davidmensahedem/urlshortenerapi/tree/main/UrlShortnerApi"
+									class="portfolio-link"><i class="ri-github-fill"></i> View Code</a>
+								<a href="https://github.com/davidmensahedem/urlshortenerapi/tree/main/UrlShortnerApi"
+									class="portfolio-link"><i class="ri-external-link-line"></i>
+									Documentation</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Project 4 -->
+				<div class="davportfoliocard" data-aos="fade-up" data-aos-delay="200">
+					<div class="davportfoliocard-inner">
+						<div class="davportfoliocard-front">
+							<div class="davportfoliocard-image">
+								<img src="img/urlshortnerclient.png" alt="Real-time Url Shortener Client">
+							</div>
+							<div class="davportfoliocard-overlay">
+								<h4>Real-time Url Shortener Client</h4>
+								<p>
+									A real-time url shortener client with a clean and modern design.
+								</p>
+							</div>
+						</div>
+						<div class="davportfoliocard-back">
+							<h4>Real-time Url Shortener Client</h4>
+							<div class="davportfoliocard-tech">
+								<span>HTML5</span>
+								<span>CSS3</span>
+								<span>Bootstrap</span>
+								<span>JavaScript</span>
+								<span>Flaticon</span>
+								<span>Animate.css</span>
+							</div>
+							<p>
+								A real-time url shortener client with a clean and modern design.
+							</p>
+							<div class="davportfoliocard-links">
+								<a href="https://github.com/davidmensahedem/urlshortnerclient" class="portfolio-link"><i
+										class="ri-github-fill"></i> View Code</a>
+								<a href="https://www.linkedin.com/posts/activity-7283952203650781184-OKK2?utm_source=share&utm_medium=member_desktop&rcm=ACoAACpxMusBwtwKD0livrf3MAgQJUaq1cfS9kc"
+									class="portfolio-link"><i class="ri-external-link-line"></i> Live Demo</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Project 5 - United Cocoa -->
+				<div class="davportfoliocard" data-aos="fade-up" data-aos-delay="300">
+					<div class="davportfoliocard-inner">
+						<div class="davportfoliocard-front">
+							<div class="davportfoliocard-image">
+								<img src="img/unitedcocoawebsite.png" alt="United Cocoa Website">
+							</div>
+							<div class="davportfoliocard-overlay">
+								<h4>United Cocoa Corporate Website</h4>
+								<p>Modern corporate website for a leading cocoa processing company</p>
+							</div>
+						</div>
+						<div class="davportfoliocard-back">
+							<h4>United Cocoa Corporate Website</h4>
+							<div class="davportfoliocard-tech">
+								<span>HTML5</span>
+								<span>CSS3</span>
+								<span>Bootstrap</span>
+								<span>Google Fonts</span>
+								<span>jQuery</span>
+								<span>JavaScript</span>
+							</div>
+							<p>A sophisticated corporate website featuring product showcases.</p>
+							<div class="davportfoliocard-links">
+								<a href="https://github.com/kwekupampoe/unitedcocoawebsite" class="portfolio-link"><i
+										class="ri-github-fill"></i> View Code</a>
+								<a href="https://unitedcocoaltd.com/index.html" target="_blank"
+									class="portfolio-link"><i class="ri-external-link-line"></i> Live Site</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Project 6 - Emmanuel Antie -->
+				<div class="davportfoliocard" data-aos="fade-up" data-aos-delay="400">
+					<div class="davportfoliocard-inner">
+						<div class="davportfoliocard-front">
+							<div class="davportfoliocard-image">
+								<img src="img/emmanuelantiewebsite.png" alt="Emmanuel Antie Portfolio">
+							</div>
+							<div class="davportfoliocard-overlay">
+								<h4>Emmanuel Antie Industrial Equipments</h4>
+								<p>A website for a leading industrial equipment company</p>
+							</div>
+						</div>
+						<div class="davportfoliocard-back">
+							<h4>Emmanuel Antie Portfolio</h4>
+							<div class="davportfoliocard-tech">
+								<span>HTML5</span>
+								<span>CSS3</span>
+								<span>JavaScript</span>
+								<span>Bootstrap</span>
+								<span>jQuery</span>
+							</div>
+							<p>
+								A website for a leading industrial equipment company..
+							</p>
+							<div class="davportfoliocard-links">
+								<!-- <a href="" class="portfolio-link"><i class="ri-github-fill"></i> View Code</a> -->
+								<a href="https://www.emmanuelantie.com/" target="_blank" class="portfolio-link"><i
+										class="ri-external-link-line"></i> Live Site</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+		<div class="davblogsection section-padding">
+			<div class="davsectiontitle" data-aos="fade-up">
+				<h2>Latest Articles</h2>
+				<h3>Insights & Technical Writing</h3>
 			</div>
 
 			<div class="davblogcontent">
@@ -605,7 +898,8 @@
 						</p>
 						<div class="davbloglink">
 							<span><i class="ri-calendar-fill"></i> 11th Oct, 2023</span>
-							<a target="_blank" href="https://dev.to/davidmensahedem/the-role-of-dynamic-link-library-dll-in-the-windows-operating-system-4oe1"
+							<a target="_blank"
+								href="https://dev.to/davidmensahedem/the-role-of-dynamic-link-library-dll-in-the-windows-operating-system-4oe1"
 								class="davblogcardlink">Read More <i class="ri-send-plane-line"></i></a>
 						</div>
 
@@ -625,24 +919,24 @@
 						</p>
 						<div class="davbloglink">
 							<span><i class="ri-calendar-fill"></i>24th Sep, 2023</span>
-							<a target="_blank" href="https://dev.to/davidmensahedem/managing-your-database-service-in-c-using-the-unit-of-work-design-pattern-36fe"
+							<a target="_blank"
+								href="https://dev.to/davidmensahedem/managing-your-database-service-in-c-using-the-unit-of-work-design-pattern-36fe"
 								class="davblogcardlink">Read More <i class="ri-send-plane-line"></i></a>
 						</div>
 					</div>
 				</div>
 
-				
+
 
 
 			</div>
 		</div>
 
 		<!-- Footer  -->
-		<div class="davfootersection" id="footer">
-
-			<div class="davsectiontitle davsectiontopspace">
-				<h1>Contact Me</h1>
-				<h3>Reach out now let's start an awesome partnership.</h3>
+		<section class="davfootersection section-padding" id="footer">
+			<div class="davsectiontitle" data-aos="fade-up">
+				<h2>Get In Touch</h2>
+				<h3>Let's Create Something Amazing Together</h3>
 			</div>
 
 			<div class="davfootersocialicons">
@@ -731,11 +1025,12 @@
 					&copy; <span id="yearDate"></span> David Edem Mensah. All rights reserved.
 				</p>
 			</div>
-		</div>
+		</section>
 		<!-- End of Footer -->
 
-		<script src=" https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 		<script src="js/main.js"></script>
 </body>
 

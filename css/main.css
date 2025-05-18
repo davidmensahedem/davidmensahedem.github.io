@@ -1,6 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;500&display=swap');
 
 :root {
+    --primary-color: #000000;
+    --secondary-color: #FFD700;
+    --text-primary: #ffffff;
+    --text-secondary: #FFD700;
+    --bg-primary: #000000;
+    --bg-secondary: #1a1a1a;
+    --transition: all 0.3s ease;
+    --nav-height: 80px;
+    --section-padding: 100px;
     --davsectiontitle-h1-fontsize: 3rem;
     --davsectiontitle-h3-fontsize: 1.2rem;
     --davsectiontitle-gap: 1rem;
@@ -17,454 +26,816 @@
     font-family: "Montserrat Alternates", sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    line-height: 1.2;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: var(--transition);
+}
 
 #preloader {
     position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    background-color: black;
-    z-index: 9999999;
-}
-
-#preloader .water-text-container {
-    position: relative;
-    width: 100%;
-    height: 100%;
+    background: var(--bg-primary);
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 9999;
 }
 
-#preloader .water-text-container .water-text {
-    margin: 0;
-    color: rgba(225, 225, 225, .01);
-    background-image: url("https://images.unsplash.com/photo-1499195333224-3ce974eecb47?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=2cf549433129d4227d1879347b9e78ce&auto=format&fit=crop&w=1248&q=80");
-    background-repeat: repeat;
-    -webkit-background-clip: text;
-    background-clip: text;
-    animation: animate 15s ease-in-out infinite;
+.water-text-container {
     text-align: center;
-    text-transform: uppercase;
-    font-weight: 900;
-    font-size: 40px;
-    line-height: 70px;
-    letter-spacing: 2px;
 }
 
-@keyframes animate {
-
-    0%,
-    100% {
-        background-position: left top;
-    }
-
-    25% {
-        background-position: right bottom;
-    }
-
-    50% {
-        background-position: left bottom;
-    }
-
-    75% {
-        background-position: right top;
-    }
+.water-text {
+    font-size: 3rem;
+    background: linear-gradient(45deg, var(--secondary-color), #4a8fff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: float 3s ease-in-out infinite;
 }
 
-.davnavbarhamburger {
-    border: 1px solid yellow;
-    padding: 0px 5px;
-    margin-top: 2px;
-    border-radius: 5px;
+.loader {
+    width: 48px;
+    height: 48px;
+    border: 3px solid var(--secondary-color);
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+    margin-top: 20px;
+}
+
+.loader::after {
+    content: '';  
+    box-sizing: border-box;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-bottom-color: var(--text-primary);
 }
 
 #davnavbar {
-    background-color: black;
-    z-index: 999999;
+    position: fixed;
     top: 0;
-    position: sticky;
-}
-
-#davnavbar .davnavbarlogo a {
-    font-size: 1.5rem;
-    font-weight: 500;
-    text-decoration: none;
-    color: yellow;
-}
-
-.davnavbaractivelink.davnavbaractivelink::after {
+    left: 0;
     width: 100%;
+    height: var(--nav-height);
+    background: var(--bg-primary);
+    z-index: 1000;
+    transition: var(--transition);
+    padding: 0 50px;
+    border-bottom: 1px solid var(--secondary-color);
 }
 
-.davsectiontopspace {
-    margin-top: var(--davsectiontopspace);
+.navbar-glass {
+    box-shadow: 0 5px 15px rgba(255, 215, 0, 0.15);
 }
 
-.davservicesection,
-.davaboutsection,
-.davfootersection,
-.davtechstacksection {
-    padding: 1.4rem;
-}
-
-.davaboutsection {
-    background-color: black;
-    color: yellow;
-
-}
-
-.davaboutimagecontainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 200px;
-    max-height: 200px;
-    margin-bottom: 20px;
-}
-
-.davaboutimagecontainer img {
-    width: 100%;
+.davnavbarlogo {
     height: 100%;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-.davaboutdetails {
-    margin-inline: 1.5rem;
-}
-
-.davaboutdetails p {
-    text-align: justify;
-}
-
-.davservicecardtitle {
-    margin-top: 5px;
-    font-size: 0.9rem;
-    letter-spacing: 1px;
-
-}
-
-.davsectiontitle {
-    text-align: center;
     display: flex;
-    flex-direction: column;
+    align-items: center;
 }
 
-.davsectiontitle h1 {
-    font-size: var(--davsectiontitle-h1-fontsize);
-    font-weight: var(--davfontweight-500);
-    /* color: yellow; */
+.logo-text {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--secondary-color);
+    letter-spacing: 1px;
 }
 
-.davsectiontitle h3 {
-    font-size: var(--davsectiontitle-h3-fontsize);
-    font-weight: var(--davfontweight-500);
-    /* color: rgb(233, 233, 5); */
+.davnavbarmenu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
 }
 
-.davservicecard {
+.davnavbarlist {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.davnavbaritem {
+    margin: 0 20px;
+}
+
+.davnavbarlink {
+    color: var(--secondary-color);
+    font-size: 14px;
+    font-weight: 500;
+    padding: 10px;
     position: relative;
 }
 
-.davaboutcontent {
+.davnavbarlink::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--secondary-color);
+    transition: var(--transition);
+}
+
+.davnavbarlink:hover::after {
+    width: 100%;
+}
+
+.davnavbarsocialicons {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+    gap: 20px;
+}
+
+.davnavbarsocialicon {
+    color: var(--secondary-color);
+    font-size: 20px;
+    transition: var(--transition);
+}
+
+.davnavbarsocialicon:hover {
+    color: #ffffff;
+    transform: translateY(-3px);
+}
+
+.hero-section {
+    min-height: 100vh;
+    display: flex;
     align-items: center;
-    gap: 1rem;
-    margin-top: var(--davservicecontent-topmargin);
+    justify-content: center;
+    padding: 0 150px;
+    background: var(--bg-primary);
+}
+
+.hero-content {
+    max-width: 1000px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.hero-greeting {
+    color: var(--secondary-color);
+    font-family: 'Inter', monospace;
+    font-size: 16px;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.hero-title {
+    font-size: 80px;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 10px;
+}
+
+.hero-subtitle {
+    font-size: 60px;
+    font-weight: 600;
+    color: var(--text-secondary);
+    margin-bottom: 20px;
+}
+
+.hero-description {
+    color: var(--text-secondary);
+    font-size: 20px;
+    max-width: 540px;
+    margin: 0 auto 30px;
+}
+
+.hero-cta {
+    display: flex;
+    gap: 20px;
+    margin-top: 50px;
+    justify-content: center;
+}
+
+.primary-btn {
+    padding: 20px 28px;
+    background-color: transparent;
+    border: 1px solid var(--secondary-color);
+    color: var(--secondary-color);
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.primary-btn:hover {
+    background-color: rgba(255, 215, 0, 0.1);
+    transform: translateY(-3px);
+}
+
+.secondary-btn {
+    padding: 20px 28px;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.secondary-btn:hover {
+    transform: translateY(-3px);
+    opacity: 0.9;
+}
+
+.davaboutsection {
+    padding: 100px 150px;
+    background: var(--bg-primary);
+}
+
+.davsectiontitle {
+    margin-bottom: 80px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.davsectiontitle h2 {
+    font-size: 32px;
+    color: var(--text-primary);
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+}
+
+.davsectiontitle h2::after {
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 3px;
+    background-color: var(--secondary-color);
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.davsectiontitle h3 {
+    color: var(--text-secondary);
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 25px;
+}
+
+.davaboutcontent {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.davaboutimagecontainer {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 2px solid var(--secondary-color);
+}
+
+.about-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    filter: none;
+    transition: var(--transition);
+}
+
+.image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 215, 0, 0.1);
+    transition: var(--transition);
+}
+
+.davaboutimagecontainer:hover .about-image {
+    transform: scale(1.05);
+}
+
+.davaboutimagecontainer:hover .image-overlay {
+    background: transparent;
+}
+
+.davaboutdetails {
+    color: var(--text-secondary);
+}
+
+.davaboutdetails p {
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.about-highlights {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.highlight-item {
+    text-align: center;
+}
+
+.highlight-number {
+    font-size: 40px;
+    font-weight: 600;
+    color: var(--secondary-color);
+    display: block;
+}
+
+.highlight-text {
+    color: var(--text-secondary);
+    font-size: 14px;
+}
+
+.davservicesection {
+    padding: 100px 150px;
+    background: var(--bg-secondary);
 }
 
 .davservicecontent {
-    margin-top: var(--davservicecontent-topmargin);
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
 }
 
 .davservicecard {
-    background-color: #f3f3f3;
-    margin: 1rem;
-    max-width: 21.875rem;
-    max-height: 22rem;
-    text-align: center;
-    padding: 1.25rem 0.625rem;
-    display: flex;
-    flex-direction: column;
-    row-gap: 10px;
-    align-items: center;
-    transition: background-color .4s;
+    background: var(--bg-primary);
+    padding: 40px;
+    border-radius: 10px;
+    transition: var(--transition);
+    cursor: pointer;
+    border: 1px solid var(--secondary-color);
 }
 
 .davservicecard:hover {
-    background-color: #e3e3e3;
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
-}
-
-.davservicecard:hover .davservicecardicon {
-    transform: scale(0.9);
-    box-shadow: 0px 0px 0px 10px rgba(247, 247, 6, 0.1);
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(255, 215, 0, 0.1);
 }
 
 .davservicecardicon {
-    padding: 10px;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: black;
-    color: yellow;
-    transition: transform .4s;
+    font-size: 40px;
+    color: var(--secondary-color);
+    margin-bottom: 20px;
 }
 
-.davservicecardicon i {
-    font-size: var(--davsectiontitle-h3-fontsize);
-    font-weight: var(--davfontweight-500);
+.davservicecardtitle h5 {
+    font-size: 20px;
+    color: var(--text-primary);
+    margin-bottom: 15px;
 }
 
-
-.davservicecardtitle {
-    margin-top: 5px;
+.davservicecarddetails p {
+    color: var(--text-secondary);
+    font-size: 14px;
+    line-height: 1.8;
 }
 
-.davservicecarddetails {
-    letter-spacing: 1px;
-    text-align: center;
-    font-size: 0.9rem;
-}
-
-.davfootersection {
-    background-color: black;
-    color: yellow;
-
-}
-
-.davfootercontent {
-    color: white;
-    margin-top: var(--davservicecontent-topmargin);
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 0.9rem;
-}
-
-.davfootercard {
-    display: flex;
-    flex-direction: column;
-    width: 350px;
-}
-
-.davfootercardicon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: black;
-    padding: 10px;
-    text-align: center;
-}
-
-.davfootercardicon div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    border: 1px solid yellow;
-}
-
-.davfootercardicon div i {
-    font-weight: var(--davfontweight-500);
-}
-
-.davfootercarddetails {
-    text-align: center;
-    margin-top: 20px;
-    text-wrap: wrap;
-
-}
-
-.davfooterextradetails {
-    text-align: center;
-    margin-top: 20px;
-}
-
-
-
-.davfootercardicon div i,
-.davfooterextradetails h5,
-.davfootercarddetails h5 {
-    color: yellow;
-    font-size: 1rem;
-}
-
-.davfootersocialicons {
-    margin: 40px 20px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding-inline: 40px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    border: 1px solid yellow;
-    transition: transform .4s;
-}
-
-.davfootersocialicon {
-    color: yellow;
-    font-size: 1.5rem;
-    transition: transform .4s;
-    text-decoration: none;
-}
-
-.davfootersocialicons:hover {
-    transform: scale(0.9);
-}
-
-.davfootersocialicon:hover {
-    transform: translateY(-5px);
-}
-
-.davfooterbottomcontainer {
-    margin-top: 28px;
-    margin-bottom: -25px;
-    text-align: center;
-}
-
-.davfootercarddetails h5 a {
-    color: yellow;
-    text-decoration: none;
-}
-
-.davfooterextradetails h5 a {
-    color: yellow !important;
-    text-decoration: none !important;
+.davtechstacksection {
+    padding: 100px 150px;
+    background: var(--bg-primary);
 }
 
 .davtechstackcontent {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1rem;
-    margin-top: var(--davservicecontent-topmargin);
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 20px;
 }
 
 .davtechstackcard {
-    background-color: white;
-    margin: 0.1rem;
-    width: 100px;
-    height: auto;
+    background: var(--bg-secondary);
+    padding: 20px;
+    border-radius: 10px;
     text-align: center;
-    padding: 1.25rem 0.625rem;
-    display: flex;
-    flex-direction: column;
-    row-gap: 10px;
-    align-items: center;
-    transition: background-color .4s;
+    transition: var(--transition);
+    border: 1px solid var(--secondary-color);
+}
+
+.davtechstackcard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(255, 215, 0, 0.1);
 }
 
 .davtechimgcontainer {
-    width: 50%;
-    height: 50%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
 }
 
 .davtechimg {
-    width: 60px;
-    height: 60px;
+    max-width: 100%;
+    max-height: 100%;
     object-fit: contain;
 }
 
-.davtechstackcarddetails {
-    letter-spacing: 1px;
-    text-align: center;
-    font-size: 1rem;
-    font-weight: var(--davfontweight-500);
-    color: black;
+.davtechstackcarddetails small {
+    color: var(--text-secondary);
+    font-size: 12px;
 }
 
-.davblogsection{
-    padding-bottom: 60px;
-    background-color: white;
-    z-index: 99999;
+.davblogsection {
+    padding: 100px 150px;
+    background: var(--bg-secondary);
 }
 
-.davblogcontent{
-    margin-top: var(--davservicecontent-topmargin);
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    /* justify-content: center; */
-    gap: 1rem;
+.davblogcontent {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
 }
 
 .davblogcard {
-    background-color: white;
-
-    padding-top: 10px;
-    padding-bottom: 20px;
-    padding-inline: 20px;
-    /* margin: 1rem; */
-    width: 100%;
-    height: auto;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    row-gap: 30px;
-    align-items: center;
-    transition: background-color .4s;
-    /* border-radius: 15px; */
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background: var(--bg-primary);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: var(--transition);
+    border: 1px solid var(--secondary-color);
 }
 
-.davblogcardimgcontainer{
-    width: 100%;
-    height: 300px;
+.davblogcard:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(255, 215, 0, 0.1);
 }
 
-.davblogcardimgcontainer img{
+.davblogcardimgcontainer {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.davblogcardimgcontainer img {
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: cover;
+    transition: var(--transition);
 }
 
-.davblogcarddetails{
-    padding:20px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    padding-inline:30px;
-    text-align: center;
-    text-wrap: wrap;
-    width: 100%;
-    margin-inline: auto;
-    color: black;
-    font-weight: 500;
+.davblogcard:hover .davblogcardimgcontainer img {
+    transform: scale(1.1);
 }
 
-.davblogcarddetails p{
-    text-align: justify;
-    margin-inline: auto;
-    letter-spacing: 0.5px;
+.davblogcarddetails {
+    padding: 30px;
 }
 
-.davbloglink{
+.davblogcarddetails h5 {
+    font-size: 18px;
+    color: var(--text-primary);
+    margin-bottom: 15px;
+}
+
+.davblogcarddetails p {
+    color: var(--text-secondary);
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.davbloglink {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    color: var(--text-secondary);
+    font-size: 14px;
 }
 
-.davbloglink span{
-    color: black;
+.davblogcardlink {
+    color: var(--secondary-color);
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
 
-.davbloglink a{
-    color: cyan;
-    text-decoration: none;
+.davblogcardlink:hover {
+    gap: 10px;
+}
+
+.davfootersection {
+    padding: 100px 150px 50px;
+    background: var(--bg-primary);
+}
+
+.davfootersocialicons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.davfootersocialicon {
+    font-size: 24px;
+    color: var(--secondary-color);
+    transition: var(--transition);
+}
+
+.davfootersocialicon:hover {
+    color: #ffffff;
+    transform: translateY(-3px);
+}
+
+.davfootercontent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.davfootercard {
+    text-align: center;
+}
+
+.davfootercarditem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.davfootercardicon {
+    width: 60px;
+    height: 60px;
+    background: var(--bg-secondary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: var(--secondary-color);
+    transition: var(--transition);
+    border: 1px solid var(--secondary-color);
+}
+
+.davfootercardicon:hover {
+    transform: translateY(-5px);
+}
+
+.davfootercarddetails h5,
+.davfooterextradetails h5 {
+    color: var(--text-primary);
+    font-size: 16px;
+}
+
+.davfooterextradetails h5 a {
+    color: var(--secondary-color);
+}
+
+.davfooterbottomcontainer {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.davfooterbottomcontainer hr {
+    border-color: var(--text-secondary);
+    opacity: 0.1;
+    margin-bottom: 20px;
+}
+
+.davfooterbottomtext {
+    color: var(--text-secondary);
+    font-size: 14px;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--secondary-color);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #ffffff;
+}
+
+/* Add spacing for specific sections */
+.davaboutsection .davsectiontitle,
+.davservicesection .davsectiontitle,
+.davtechstacksection .davsectiontitle,
+.davblogsection .davsectiontitle,
+.davfootersection .davsectiontitle,
+.davportfoliosection .davsectiontitle {
+    margin-bottom: 100px;
+}
+
+/* Portfolio Section Styles */
+.davportfoliosection {
+    padding: 100px 150px;
+    background: var(--bg-secondary);
+}
+
+.davportfoliocontent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    perspective: 1000px;
+}
+
+.davportfoliocard {
+    height: 400px;
+    perspective: 1500px;
+}
+
+.davportfoliocard-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+}
+
+.davportfoliocard:hover .davportfoliocard-inner {
+    transform: rotateY(180deg);
+}
+
+.davportfoliocard-front,
+.davportfoliocard-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 15px;
+    overflow: hidden;
+    border: 1px solid var(--secondary-color);
+}
+
+.davportfoliocard-front {
+    background: var(--bg-primary);
+}
+
+.davportfoliocard-back {
+    background: var(--bg-primary);
+    transform: rotateY(180deg);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.davportfoliocard-image {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.davportfoliocard-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.8);
+    transition: filter 0.3s ease;
+}
+
+.davportfoliocard-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent);
+    padding: 30px;
+    color: var(--text-primary);
+    text-align: left;
+}
+
+.davportfoliocard-overlay h4 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: var(--secondary-color);
+}
+
+.davportfoliocard-overlay p {
+    font-size: 14px;
+    color: var(--text-secondary);
+    opacity: 0.9;
+}
+
+.davportfoliocard-back h4 {
+    font-size: 24px;
+    color: var(--secondary-color);
+    margin-bottom: 15px;
+}
+
+.davportfoliocard-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.davportfoliocard-tech span {
+    background: rgba(255, 215, 0, 0.1);
+    color: var(--secondary-color);
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 12px;
+    border: 1px solid var(--secondary-color);
+}
+
+.davportfoliocard-back p {
+    color: var(--text-secondary);
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.davportfoliocard-links {
+    display: flex;
+    gap: 20px;
+}
+
+.portfolio-link {
+    color: var(--secondary-color);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.portfolio-link:hover {
+    transform: translateY(-3px);
+    text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+}
+
+/* Add hover effects */
+.davportfoliocard:hover .davportfoliocard-image img {
+    filter: brightness(1);
+}
+
+@media (max-width: 1200px) {
+    .davportfoliosection {
+        padding: 100px 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .davportfoliocontent {
+        grid-template-columns: 1fr;
+    }
+    
+    .davportfoliocard {
+        height: 350px;
+    }
 }
