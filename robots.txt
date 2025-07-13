@@ -1,0 +1,66 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://davidmensah.dev/sitemap.xml
+
+# Crawl delay (optional - helps prevent server overload)
+Crawl-delay: 1
+
+# Specific bot instructions
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Slurp
+Allow: /
+Crawl-delay: 1
+
+User-agent: DuckDuckBot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Baiduspider
+Allow: /
+Crawl-delay: 2
+
+User-agent: YandexBot
+Allow: /
+Crawl-delay: 2
+
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+# Disallow certain file types that are not useful for SEO
+Disallow: /*.css$
+Disallow: /*.js$
+Disallow: /*.json$
+Disallow: /*.xml$
+Disallow: /*.txt$
+
+# Allow access to specific important files
+Allow: /sitemap.xml
+Allow: /robots.txt
+Allow: /site.webmanifest
+
+# Priority pages for crawling
+# Main sections of the portfolio
+Allow: /#about
+Allow: /#experience
+Allow: /#education
+Allow: /#achievements
+Allow: /#services
+Allow: /#portfolio
+Allow: /#videos
+Allow: /#articles
+Allow: /#footer 
