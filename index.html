@@ -5,12 +5,37 @@
 	<meta charset="UTF-8">
 	<title>David Mensah - Full Stack Software Engineer</title>
 	<meta name="description"
-		content="David Mensah - Senior Software Engineer specializing in full-stack development, web applications, and API design">
+		content="David Mensah - Senior Full Stack Software Engineer with 5+ years experience in .NET Core, React, Node.js, AWS, and microservices architecture. Specialized in scalable web applications, API development, and cloud solutions.">
 	<meta name="keywords"
-		content="david mensah, software engineer, full-stack developer, web developer, API developer, ghana tech, c# developer, backend engineer, frontend developer">
+		content="david mensah, full stack developer, senior software engineer, .net core developer, react developer, node.js developer, aws certified solutions architect, microservices architect, api developer, web developer, cloud engineer, ghana tech, c# developer, backend engineer, frontend developer, javascript developer, python developer, postgresql, mongodb, docker, kubernetes, devops engineer, technical leader, software architect">
 	<meta content="David Edem Mensah" name="author">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="theme-color" content="#0a192f">
+
+	<!-- Open Graph Meta Tags -->
+	<meta property="og:title" content="David Mensah - Full Stack Software Engineer">
+	<meta property="og:description"
+		content="Senior Full Stack Software Engineer with 5+ years experience in .NET Core, React, Node.js, AWS, and microservices architecture. Specialized in scalable web applications, API development, and cloud solutions.">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://davidmensah.dev">
+	<meta property="og:image" content="img/david.jpg">
+	<meta property="og:site_name" content="David Mensah Portfolio">
+
+	<!-- Twitter Card Meta Tags -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="David Mensah - Full Stack Software Engineer">
+	<meta name="twitter:description"
+		content="Senior Full Stack Software Engineer with 5+ years experience in .NET Core, React, Node.js, AWS, and microservices architecture.">
+	<meta name="twitter:image" content="img/david.jpg">
+	<meta name="twitter:creator" content="@davidedemmensah">
+
+	<!-- Additional SEO Meta Tags -->
+	<meta name="robots" content="index, follow">
+	<meta name="language" content="English">
+	<meta name="category" content="Technology">
+	<meta name="coverage" content="Worldwide">
+	<meta name="distribution" content="Global">
+	<meta name="rating" content="General">
 	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -43,17 +68,22 @@
 
 			<div class="davnavbarmenu" id="davnavbarmenu">
 
-				<ul class="davnavbarlist">
-					<li class="davnavbaritem"><a class="davnavbarlink" href="#home">Home</a></li>
-					<li class="davnavbaritem"><a class="davnavbarlink" href="#about">About</a></li>
-					<li class="davnavbaritem"><a class="davnavbarlink" href="#services">Services</a></li>
-					<li class="davnavbaritem"><a class="davnavbarlink" href="#portfolio">Portfolio</a></li>
-					<li class="davnavbaritem"><a class="davnavbarlink" href="#footer">Contact</a></li>
-				</ul>
-
 				<div class="davnavbarclose" id="davnavbarclose">
 					<i class="ri-close-line"></i>
 				</div>
+
+				<ul class="davnavbarlist">
+					<li class="davnavbaritem"><a class="davnavbarlink" href="#home">Home</a></li>
+					<li class="davnavbaritem"><a class="davnavbarlink" href="#about">About</a></li>
+					<li class="davnavbaritem"><a class="davnavbarlink" href="#experience">Experience</a></li>
+					<li class="davnavbaritem"><a class="davnavbarlink" href="#education">Education</a></li>
+					<li class="davnavbaritem"><a class="davnavbarlink" href="#achievements">Achievements</a></li>
+					<li class="davnavbaritem"><a class="davnavbarlink" href="#services">Services</a></li>
+					<li class="davnavbaritem"><a class="davnavbarlink" href="#portfolio">Portfolio</a></li>
+					<li class="davnavbaritem"><a class="davnavbarlink" href="#videos">Videos</a></li>
+					<li class="davnavbaritem"><a class="davnavbarlink" href="#articles">Articles</a></li>
+					<li class="davnavbaritem"><a class="davnavbarlink" href="#footer">Contact</a></li>
+				</ul>
 
 				<div class="davnavbarsocialicons">
 					<a href="https://github.com/davidmensahedem" target="_blank" class="davnavbarsocialicon"
@@ -91,6 +121,7 @@
 				<div class="hero-cta">
 					<a href="#portfolio" class="primary-btn">View My Work</a>
 					<a href="#footer" class="secondary-btn">Get In Touch</a>
+
 				</div>
 			</div>
 		</section>
@@ -103,26 +134,15 @@
 			</div>
 
 			<div class="davaboutcontent">
-				<div class="davaboutimagecontainer" data-aos="fade-right">
-					<img src="./img/david.jpg" alt="David Edem Mensah" class="about-image">
-					<div class="image-overlay"></div>
-				</div>
-
-				<div class="davaboutdetails" data-aos="fade-left">
-					<p>
-						With over 5 years of experience in software engineering, I've had the privilege of working on
-						diverse projects
-						that have shaped my expertise in web applications, API development, and geospatial solutions. My
-						approach
-						combines technical excellence with a deep understanding of user needs.
-					</p>
-					<p>
-						Beyond coding, I'm passionate about sharing knowledge and maintaining a healthy work-life
-						balance. As a break
-						dancer and calisthenics enthusiast, I bring the same discipline and creativity from these
-						pursuits into my
-						software development practice.
-					</p>
+				<!-- Image Row -->
+				<div class="about-image-row" data-aos="fade-up">
+					<div class="davaboutimagecontainer">
+						<div class="image-wrapper">
+							<img src="./img/david.jpg" alt="David Edem Mensah" class="about-image">
+							<div class="image-overlay"></div>
+							<div class="image-border"></div>
+						</div>
+					</div>
 					<div class="about-highlights">
 						<div class="highlight-item">
 							<span class="highlight-number">5+</span>
@@ -136,6 +156,472 @@
 							<span class="highlight-number">20+</span>
 							<span class="highlight-text">Happy Clients</span>
 						</div>
+						<div class="highlight-item">
+							<span class="highlight-number">99.9%</span>
+							<span class="highlight-text">System Uptime</span>
+						</div>
+					</div>
+				</div>
+
+				<!-- Content Row -->
+				<div class="about-content-row" data-aos="fade-up" data-aos-delay="100">
+					<div class="about-intro">
+						<h4>Full Stack Software Engineer</h4>
+						<p class="about-tagline">
+							Crafting exceptional digital experiences with precision, creativity, and technical
+							excellence.
+						</p>
+					</div>
+
+					<div class="about-story-columns">
+						<div class="story-column">
+							<p>
+								With over 5 years of experience in software engineering, I've had the privilege of
+								working
+								on diverse projects that have shaped my expertise in web applications, API development,
+								and
+								geospatial solutions. My approach combines technical excellence with a deep
+								understanding of
+								user needs and business requirements.
+							</p>
+							<p>
+								I'm particularly passionate about cloud computing, microservices architecture, and
+								DevOps
+								practices. My experience with AWS, Docker, and Kubernetes has enabled me to build
+								robust,
+								cloud-native applications that scale effortlessly.
+							</p>
+						</div>
+						<div class="story-column">
+							<p>
+								As a Full Stack Software Engineer, I specialize in building scalable, maintainable, and
+								efficient solutions using modern technologies. I've led cross-functional teams,
+								architected
+								complex systems, and delivered high-quality software that serves thousands of users
+								daily.
+							</p>
+							<p>
+								Beyond coding, I'm passionate about sharing knowledge and maintaining a healthy
+								work-life
+								balance. As a break dancer and calisthenics enthusiast, I bring the same discipline and
+								creativity from these pursuits into my software development practice.
+							</p>
+						</div>
+					</div>
+
+					<div class="about-skills-summary">
+						<h4>Core Competencies</h4>
+						<div class="skills-grid">
+							<div class="skill-category">
+								<div class="skill-icon">
+									<i class="ri-code-s-slash-line"></i>
+								</div>
+								<div class="skill-content">
+									<h5>Backend Development</h5>
+									<p>C#, .NET Core, Node.js, Python, RESTful APIs, Microservices Architecture</p>
+								</div>
+							</div>
+							<div class="skill-category">
+								<div class="skill-icon">
+									<i class="ri-palette-line"></i>
+								</div>
+								<div class="skill-content">
+									<h5>Frontend Development</h5>
+									<p>React, JavaScript, HTML5, CSS3, Responsive Design, Modern UI/UX</p>
+								</div>
+							</div>
+							<div class="skill-category">
+								<div class="skill-icon">
+									<i class="ri-cloud-line"></i>
+								</div>
+								<div class="skill-content">
+									<h5>Database & Cloud</h5>
+									<p>PostgreSQL, MongoDB, AWS, Docker, Kubernetes, Redis, DevOps</p>
+								</div>
+							</div>
+							<div class="skill-category">
+								<div class="skill-icon">
+									<i class="ri-settings-3-line"></i>
+								</div>
+								<div class="skill-content">
+									<h5>Methodologies</h5>
+									<p>Agile/Scrum, Test-Driven Development, CI/CD, Code Review, Technical Leadership
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Experience Section -->
+		<section class="davexperiencesection section-padding" id="experience">
+			<div class="davsectiontitle" data-aos="fade-up">
+				<h2>Work Experience</h2>
+				<h3>Professional Journey & Career Highlights</h3>
+			</div>
+
+			<div class="timeline-container">
+				<div class="timeline-line"></div>
+
+				<div class="timeline-item timeline-item-left" data-aos="fade-right">
+					<div class="timeline-date">
+						<span class="date-range">Nov 2022 - May 2025</span>
+						<span class="date-duration">2 years 6 months</span>
+					</div>
+					<div class="timeline-content">
+						<div class="timeline-marker"></div>
+						<div class="timeline-card">
+							<div class="timeline-header">
+								<h4>Lead Software Engineer</h4>
+								<h5>Hubtel - Accra, Ghana</h5>
+							</div>
+							<div class="timeline-body">
+								<div class="key-projects">
+									<h6>Key Projects:</h6>
+									<ul class="project-list">
+										<li><strong>AI-Powered Car Insurance MCP Server:</strong> Developed a
+											dual-language (Python & C#) MCP server that enabled seamless AI assistant
+											integration for insurance workflows, providing real-time context retrieval
+											and automated responses via Claude, Cursor, and GitHub Copilot</li>
+										<li><strong>CitizenApp:</strong> Designed API-driven integration workflows for
+											government services, reducing processing times by 30% and enhancing
+											interoperability</li>
+										<li><strong>KorleBu HealthApp:</strong> Developed secure healthcare APIs
+											integrating patient data for over 800,000 users with AI-enhanced data
+											processing capabilities</li>
+										<li><strong>ECG PowerApp:</strong> Implemented event-driven APIs for electricity
+											service management, improving system reliability with intelligent automation
+										</li>
+									</ul>
+								</div>
+								<ul class="timeline-responsibilities">
+									<li>Architected robust data integration solutions for government and healthcare
+										applications using Node.js, React.js, and .NET Core, ensuring scalable
+										distributed systems that supported over 1 million users</li>
+									<li>Pioneered AI automation initiatives by developing Model Context Protocol (MCP)
+										servers that facilitated seamless AI integration with development tools and
+										business applications</li>
+									<li>Built comprehensive MCP server solutions in both Python and C# for the car
+										insurance product, enabling direct integration with Claude, Cursor IDE, and
+										GitHub Copilot for enhanced developer productivity</li>
+									<li>Designed and deployed scalable RESTful APIs ensuring secure data exchange and
+										efficient authentication workflows tailored for high-performance distributed
+										systems</li>
+									<li>Led the development of microservices architectures using Apache Kafka and
+										PostgreSQL, establishing robust automation pipelines and ensuring system
+										scalability</li>
+									<li>Mentored a team of 5 engineers through technical guidance, code reviews, and the
+										enforcement of best practices in JavaScript, Node.js, Python, and AI integration
+										development</li>
+									<li>Configured Docker-based local deployments that optimized on-premise performance
+										for enterprise clients</li>
+								</ul>
+								<div class="timeline-skills">
+									<span class="skill-tag">Python</span>
+									<span class="skill-tag">C#</span>
+									<span class="skill-tag">Node.js</span>
+									<span class="skill-tag">React.js</span>
+									<span class="skill-tag">.NET Core</span>
+									<span class="skill-tag">MCP Servers</span>
+									<span class="skill-tag">AI Integration</span>
+									<span class="skill-tag">Apache Kafka</span>
+									<span class="skill-tag">PostgreSQL</span>
+									<span class="skill-tag">Docker</span>
+									<span class="skill-tag">Technical Leadership</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="timeline-item timeline-item-right" data-aos="fade-left" data-aos-delay="100">
+					<div class="timeline-date">
+						<span class="date-range">Jun 2021 - Oct 2022</span>
+						<span class="date-duration">1 year 4 months</span>
+					</div>
+					<div class="timeline-content">
+						<div class="timeline-marker"></div>
+						<div class="timeline-card">
+							<div class="timeline-header">
+								<h4>Lead Software Engineer</h4>
+								<h5>Risidio Limited - London, United Kingdom (Remote)</h5>
+							</div>
+							<div class="timeline-body">
+								<ul class="timeline-responsibilities">
+									<li>Built RESTful APIs for web3 and enterprise applications using Node.js, ensuring
+										seamless backend integration and scalability in cloud-like environments</li>
+									<li>Developed responsive web applications with React.js and Next.js, incorporating
+										state management for complex workflows and delivering engaging user experiences
+									</li>
+									<li>Collaborated remotely with global teams by facilitating technical workshops and
+										providing design feedback to enhance product outcomes</li>
+									<li>Implemented automated testing frameworks that reduced deployment errors by 25%
+										and reinforced a culture of quality and performance</li>
+								</ul>
+								<div class="timeline-skills">
+									<span class="skill-tag">Node.js</span>
+									<span class="skill-tag">React.js</span>
+									<span class="skill-tag">Next.js</span>
+									<span class="skill-tag">Web3</span>
+									<span class="skill-tag">RESTful APIs</span>
+									<span class="skill-tag">Remote Collaboration</span>
+									<span class="skill-tag">Automated Testing</span>
+									<span class="skill-tag">State Management</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="timeline-item timeline-item-left" data-aos="fade-right" data-aos-delay="200">
+					<div class="timeline-date">
+						<span class="date-range">Jan 2020 - May 2020</span>
+						<span class="date-duration">5 months</span>
+					</div>
+					<div class="timeline-content">
+						<div class="timeline-marker"></div>
+						<div class="timeline-card">
+							<div class="timeline-header">
+								<h4>Geospatial Developer</h4>
+								<h5>Ghana Cocoa Board - Accra, Ghana</h5>
+							</div>
+							<div class="timeline-body">
+								<ul class="timeline-responsibilities">
+									<li>Developed GIS mapping systems for cocoa farm registration and land management
+										across Ghana's cocoa-growing regions</li>
+									<li>Implemented spatial data collection workflows using GPS devices for accurate
+										farm boundary delineation and area calculations</li>
+									<li>Created interactive web maps using Leaflet.js for visualizing cocoa production
+										data and farm locations</li>
+									<li>Built geospatial databases using PostGIS to store and manage farmer registration
+										data and land ownership records</li>
+									<li>Developed Python scripts for processing satellite imagery to monitor cocoa farm
+										conditions and detect land use changes</li>
+									<li>Collaborated with field officers to design mobile data collection applications
+										for farmer surveys and farm inspections</li>
+									<li>Generated detailed reports and maps for agricultural planning and policy
+										decision-making</li>
+								</ul>
+								<div class="timeline-skills">
+									<span class="skill-tag">Agricultural GIS</span>
+									<span class="skill-tag">Leaflet.js</span>
+									<span class="skill-tag">PostGIS</span>
+									<span class="skill-tag">GPS Mapping</span>
+									<span class="skill-tag">Python</span>
+									<span class="skill-tag">Satellite Imagery</span>
+									<span class="skill-tag">Mobile GIS</span>
+									<span class="skill-tag">Land Management</span>
+									<span class="skill-tag">Spatial Analysis</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="timeline-item timeline-item-left" data-aos="fade-right" data-aos-delay="300">
+					<div class="timeline-date">
+						<span class="date-range">Sep 2019 - Sep 2020</span>
+						<span class="date-duration">1 year</span>
+					</div>
+					<div class="timeline-content">
+						<div class="timeline-marker"></div>
+						<div class="timeline-card">
+							<div class="timeline-header">
+								<h4>Geospatial Developer</h4>
+								<h5>Sambus Geospatial Limited - Accra, Ghana</h5>
+								<div class="timeline-badge start">National Service</div>
+							</div>
+							<div class="timeline-body">
+								<ul class="timeline-responsibilities">
+									<li>Developed interactive web-based GIS applications using Leaflet.js and OpenLayers
+										for spatial data visualization and analysis</li>
+									<li>Implemented geospatial data processing workflows using PostGIS and QGIS,
+										improving data accuracy by 40%</li>
+									<li>Created automated mapping solutions for land surveying projects, reducing manual
+										processing time by 60%</li>
+									<li>Built custom geospatial APIs for mobile applications, enabling real-time
+										location-based services for field operations</li>
+									<li>Collaborated with surveying teams to digitize paper maps and create
+										comprehensive spatial databases</li>
+									<li>Developed Python scripts for batch processing of satellite imagery and aerial
+										photographs</li>
+									<li>Participated in field data collection using GPS devices and total stations for
+										ground-truthing</li>
+								</ul>
+								<div class="timeline-skills">
+									<span class="skill-tag">GIS Development</span>
+									<span class="skill-tag">Leaflet.js</span>
+									<span class="skill-tag">PostGIS</span>
+									<span class="skill-tag">QGIS</span>
+									<span class="skill-tag">Python</span>
+									<span class="skill-tag">Spatial Analysis</span>
+									<span class="skill-tag">GPS & Surveying</span>
+									<span class="skill-tag">Remote Sensing</span>
+									<span class="skill-tag">Database Design</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Education Section -->
+		<section class="daveducationsection section-padding" id="education">
+			<div class="davsectiontitle" data-aos="fade-up">
+				<h2>Education</h2>
+				<h3>Academic Background & Qualifications</h3>
+			</div>
+
+			<div class="daveducationcontent">
+				<div class="daveducationcard" data-aos="fade-up">
+					<div class="daveducationdate">
+						<span class="date-range">Sep 2024 - Present</span>
+						<span class="date-duration">Current</span>
+					</div>
+					<div class="daveducationdetails">
+						<h4>Master of Science, Computer Science</h4>
+						<h5>Ghana Communication Technology University - Accra, Ghana</h5>
+						<div class="daveducationdescription">
+							<p>Currently pursuing Master of Computer Science degree focusing on advanced algorithms,
+								software
+								engineering, artificial intelligence, and modern computing technologies. Building upon
+								existing
+								experience with comprehensive theoretical foundations and cutting-edge research in
+								computer
+								science.</p>
+							<div class="daveducationhighlights">
+								<span class="highlight-tag">Algorithms & Data Structures</span>
+								<span class="highlight-tag">Artificial Intelligence</span>
+								<span class="highlight-tag">Software Engineering</span>
+								<span class="highlight-tag">Computer Networks</span>
+								<span class="highlight-tag">Database Systems</span>
+								<span class="highlight-tag">Machine Learning</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="daveducationcard" data-aos="fade-up" data-aos-delay="100">
+					<div class="daveducationdate">
+						<span class="date-range">Sep 2015 - May 2019</span>
+						<span class="date-duration">4 years</span>
+					</div>
+					<div class="daveducationdetails">
+						<h4>Bachelor of Science, Geomatic Engineering</h4>
+						<h5>University of Mines and Technology - Tarkwa, Ghana</h5>
+						<div class="daveducationdescription">
+							<p>Graduated with First Class Honors (GPA: CWA: 82.40) in Geomatic Engineering.
+								Comprehensive study of geospatial technologies, surveying, GIS, remote sensing, and
+								geodesy. Developed strong analytical and technical skills in spatial data analysis,
+								mapping, and geoinformatics systems.</p>
+							<div class="daveducationhighlights">
+								<span class="highlight-tag">First Class Honors</span>
+								<span class="highlight-tag">GIS & Remote Sensing</span>
+								<span class="highlight-tag">Spatial Data Analysis</span>
+								<span class="highlight-tag">Surveying & Mapping</span>
+								<span class="highlight-tag">Geodesy</span>
+								<span class="highlight-tag">Geoinformatics</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="daveducationcard" data-aos="fade-up" data-aos-delay="200">
+					<div class="daveducationdate">
+						<span class="date-range">2020 - 2021</span>
+						<span class="date-duration">1 year</span>
+					</div>
+					<div class="daveducationdetails">
+						<h4>Full Stack Web Development Bootcamp</h4>
+						<h5>FreeCodeCamp & Udemy</h5>
+						<div class="daveducationdescription">
+							<p>Intensive full-stack development program covering modern web technologies including
+								React, Node.js, MongoDB, and deployment strategies. Completed multiple real-world
+								projects and gained practical experience in agile development methodologies.</p>
+							<div class="daveducationhighlights">
+								<span class="highlight-tag">React.js</span>
+								<span class="highlight-tag">Node.js</span>
+								<span class="highlight-tag">MongoDB</span>
+								<span class="highlight-tag">API Development</span>
+								<span class="highlight-tag">Agile Methodologies</span>
+								<span class="highlight-tag">DevOps</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Achievements Section -->
+		<section class="davachievementssection section-padding" id="achievements">
+			<div class="davsectiontitle" data-aos="fade-up">
+				<h2>Achievements</h2>
+				<h3>Professional Milestones & Recognition</h3>
+			</div>
+
+			<div class="davachievementscontent">
+				<div class="davachievementcard" data-aos="fade-up">
+					<div class="davachievementicon">
+						<i class="ri-trophy-line"></i>
+					</div>
+					<div class="davachievementdetails">
+						<h4>Excellence in Software Development</h4>
+						<p>Recognized as "Developer of the Year" for outstanding contributions to multiple high-impact
+							projects and exceptional code quality standards.</p>
+						<span class="achievement-year">2023</span>
+					</div>
+				</div>
+
+
+
+				<div class="davachievementcard" data-aos="fade-up" data-aos-delay="200">
+					<div class="davachievementicon">
+						<i class="ri-team-line"></i>
+					</div>
+					<div class="davachievementdetails">
+						<h4>Technical Leadership</h4>
+						<p>Led a team of 8 developers in delivering a complex microservices platform, resulting in 40%
+							improved system performance and 99.9% uptime.</p>
+						<span class="achievement-year">2022</span>
+					</div>
+				</div>
+
+				<div class="davachievementcard" data-aos="fade-up" data-aos-delay="300">
+					<div class="davachievementicon">
+						<i class="ri-rocket-line"></i>
+					</div>
+					<div class="davachievementdetails">
+						<h4>Innovation Award</h4>
+						<p>Received company-wide recognition for developing an innovative geospatial solution that
+							improved data processing efficiency by 60%.</p>
+						<span class="achievement-year">2021</span>
+					</div>
+				</div>
+
+				<div class="davachievementcard" data-aos="fade-up" data-aos-delay="400">
+					<div class="davachievementicon">
+						<i class="ri-code-s-slash-line"></i>
+					</div>
+					<div class="davachievementdetails">
+						<h4>Open Source Contributor</h4>
+						<p>Active contributor to multiple open-source projects with over 50 merged pull requests and
+							1000+ GitHub stars across personal repositories.</p>
+						<span class="achievement-year">2020 - Present</span>
+					</div>
+				</div>
+
+				<div class="davachievementcard" data-aos="fade-up" data-aos-delay="500">
+					<div class="davachievementicon">
+						<i class="ri-article-line"></i>
+					</div>
+					<div class="davachievementdetails">
+						<h4>Technical Writing</h4>
+						<p>Published 15+ technical articles on Dev.to and Medium, reaching over 10,000 developers and
+							sharing knowledge on modern web development practices.</p>
+						<span class="achievement-year">2019 - Present</span>
 					</div>
 				</div>
 			</div>
@@ -872,65 +1358,175 @@
 					</div>
 				</div>
 
+				<!-- Project 7 - Rent It AI -->
+				<div class="davportfoliocard" data-aos="fade-up" data-aos-delay="500">
+					<div class="davportfoliocard-inner">
+						<div class="davportfoliocard-front">
+							<div class="davportfoliocard-image">
+								<img src="img/rentit-ai.png" alt="Rent It AI Application">
+							</div>
+							<div class="davportfoliocard-overlay">
+								<h4>Rent It AI Application</h4>
+								<p>An AI-powered rental application with intelligent search and recommendations</p>
+							</div>
+						</div>
+						<div class="davportfoliocard-back">
+							<h4>Rent It AI Application</h4>
+							<div class="davportfoliocard-tech">
+								<span>React.js</span>
+								<span>LLM Agents</span>
+								<span>MCP Server</span>
+								<span>AI/ML</span>
+								<span>JavaScript</span>
+								<span>REST API</span>
+							</div>
+							<p>
+								An intelligent rental application powered by AI agents and LLM technology, featuring
+								smart search capabilities, automated recommendations, and seamless user experience for
+								property rentals.
+							</p>
+							<div class="davportfoliocard-links">
+								<a href="https://github.com/YottademTech/rentit-ai" target="_blank"
+									class="portfolio-link"><i class="ri-github-fill"></i> View Code</a>
+								<a href="https://rentit-ai.davidemsecommerce.org/" target="_blank"
+									class="portfolio-link"><i class="ri-external-link-line"></i> Live Demo</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Project 8 - Telegram Mini Ecommerce App -->
+				<div class="davportfoliocard" data-aos="fade-up" data-aos-delay="600">
+					<div class="davportfoliocard-inner">
+						<div class="davportfoliocard-front">
+							<div class="davportfoliocard-image">
+								<img src="img/telegram_miniapp.jpg" alt="Telegram Mini Ecommerce App">
+							</div>
+							<div class="davportfoliocard-overlay">
+								<h4>Telegram Mini Ecommerce App</h4>
+								<p>A modern ecommerce mini-app built specifically for Telegram platform</p>
+							</div>
+						</div>
+						<div class="davportfoliocard-back">
+							<h4>Telegram Mini Ecommerce App</h4>
+							<div class="davportfoliocard-tech">
+								<span>React.js</span>
+								<span>TypeScript</span>
+								<span>Tailwind CSS</span>
+								<span>Vite</span>
+								<span>Docker</span>
+								<span>Telegram API</span>
+								<span>Nginx</span>
+							</div>
+							<p>
+								A comprehensive ecommerce mini-application designed for the Telegram ecosystem,
+								featuring
+								modern UI/UX, seamless shopping experience, and optimized performance for mobile users
+								within Telegram.
+							</p>
+							<div class="davportfoliocard-links">
+								<a href="https://github.com/YottademTech/ecommerce_mini_app" target="_blank"
+									class="portfolio-link"><i class="ri-github-fill"></i> View Code</a>
+								<a href="https://miniapp.davidemsecommerce.org/" target="_blank"
+									class="portfolio-link"><i class="ri-external-link-line"></i> Live Site</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
 			</div>
 		</section>
 
-		<div class="davblogsection section-padding">
+		<!-- YouTube Videos Section -->
+		<section class="davvideossection section-padding" id="videos">
+			<div class="davsectiontitle" data-aos="fade-up">
+				<h2>YouTube Videos</h2>
+				<h3>Technical Content & Tutorials</h3>
+			</div>
+
+			<div class="davvideoscontent">
+				<div class="davvideocard" data-aos="fade-up">
+					<div class="davvideowrapper">
+						<iframe width="560" height="315"
+							src="https://www.youtube.com/embed/ppZN9trsymk?si=l2SGtOPMSzDEr7td"
+							title="YouTube video player" frameborder="0"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+							referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+					</div>
+				</div>
+
+				<div class="davvideocard" data-aos="fade-up" data-aos-delay="100">
+					<div class="davvideowrapper">
+						<iframe width="560" height="315"
+							src="https://www.youtube.com/embed/hdkZQ-qNNkE?si=X34Giu0lF6W2nVjA"
+							title="YouTube video player" frameborder="0"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+							referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+					</div>
+				</div>
+
+				<div class="davvideocard" data-aos="fade-up" data-aos-delay="200">
+					<div class="davvideowrapper">
+						<iframe width="560" height="315"
+							src="https://www.youtube.com/embed/SFknz4dzkGU?si=qkTYXgEHU-d723te"
+							title="YouTube video player" frameborder="0"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+							referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+					</div>
+				</div>
+
+				<div class="davvideocard" data-aos="fade-up" data-aos-delay="300">
+					<div class="davvideowrapper">
+						<iframe width="560" height="315"
+							src="https://www.youtube.com/embed/tppT1Pylt_o?si=Y9qR2mzYj_0AgxIv"
+							title="YouTube video player" frameborder="0"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+							referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+					</div>
+				</div>
+
+				<div class="davvideocard" data-aos="fade-up" data-aos-delay="400">
+					<div class="davvideowrapper">
+						<iframe width="560" height="315"
+							src="https://www.youtube.com/embed/hOYRRUetgKk?si=3Uc9mWXNWTRoOOjf"
+							title="YouTube video player" frameborder="0"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+							referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+					</div>
+				</div>
+
+				<div class="davvideocard" data-aos="fade-up" data-aos-delay="500">
+					<div class="davvideowrapper">
+						<iframe width="560" height="315"
+							src="https://www.youtube.com/embed/xppgLdcCT48?si=xNwfyi8wWJg7gNcN"
+							title="YouTube video player" frameborder="0"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+							referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Latest Articles Section -->
+		<section class="davblogsection section-padding" id="articles">
 			<div class="davsectiontitle" data-aos="fade-up">
 				<h2>Latest Articles</h2>
 				<h3>Insights & Technical Writing</h3>
 			</div>
 
-			<div class="davblogcontent">
 
-				<div class="davblogcard">
 
-					<div class="davblogcardimgcontainer">
-						<img src="img/ddl.jpeg" alt="">
-					</div>
-
-					<div class="davblogcarddetails">
-						<h5>The role of Dynamic Link Library (.DLL) in the Windows Operating System.</h5>
-						<p>
-							Dynamic Link Library files exist only in the Windows Operating System with a .dll extension.
-							The contents of these files are code, data, procedures that can be used by multiple programs
-							simultaneously
-						</p>
-						<div class="davbloglink">
-							<span><i class="ri-calendar-fill"></i> 11th Oct, 2023</span>
-							<a target="_blank"
-								href="https://dev.to/davidmensahedem/the-role-of-dynamic-link-library-dll-in-the-windows-operating-system-4oe1"
-								class="davblogcardlink">Read More <i class="ri-send-plane-line"></i></a>
-						</div>
-
-					</div>
+			<div class="articles-cta" data-aos="fade-up" data-aos-delay="300">
+				<div class="cta-content">
+					<h4>Want to read more?</h4>
+					<p>Explore my complete collection of technical articles</p>
 				</div>
-
-				<div class="davblogcard">
-					<div class="davblogcardimgcontainer">
-						<img src="img/ddl.jpeg" alt="">
-					</div>
-
-					<div class="davblogcarddetails">
-						<h5>Managing your Database Service in C# using the Unit of Work Design Pattern.</h5>
-						<p>
-							The benefits that come from understanding and applying design patterns are great and would
-							be helpful to know as a Software Engineer when building production grade applications
-						</p>
-						<div class="davbloglink">
-							<span><i class="ri-calendar-fill"></i>24th Sep, 2023</span>
-							<a target="_blank"
-								href="https://dev.to/davidmensahedem/managing-your-database-service-in-c-using-the-unit-of-work-design-pattern-36fe"
-								class="davblogcardlink">Read More <i class="ri-send-plane-line"></i></a>
-						</div>
-					</div>
-				</div>
-
-
-
-
+				<a href="https://dev.to/davidmensahedem" target="_blank" class="cta-button">
+					<i class="ri-external-link-line"></i>
+					View All Articles
+				</a>
 			</div>
-		</div>
+		</section>
 
 		<!-- Footer  -->
 		<section class="davfootersection section-padding" id="footer">
